@@ -5,16 +5,34 @@
 #include "CoreMinimal.h"
 #include "GameFramework/GameUserSettings.h"
 #include "Kismet/GameplayStatics.h"
-#include "BetterGameUserSettings.generated.h"
+#include "TP_CustomGameUserSettings.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class CUSTOM_API UBetterGameUserSettings : public UGameUserSettings
+class TP_CUSTOM_API UTP_CustomGameUserSettings : public UGameUserSettings
 {
 	GENERATED_BODY()
-	
+
+public:
+	UFUNCTION(BlueprintCallable)
+	static UTP_CustomGameUserSettings* GetTP_CustomGameUserSettings()
+	{
+		return Cast<UTP_CustomGameUserSettings>(UGameUserSettings::GetGameUserSettings());
+	}
+
+	void ApplySettings(bool bCheckForCommandLineOverrides) override
+	{
+        if (MusicSoundClass && SFXSoundClass)
+        {
+            MusicSoundClass->Properties.Volume = FMath::Clamp(MusicVolume, 0.f, 1.f);
+            SFXSoundClass->Properties.Volume = FMath::Clamp(SFXVolume, 0.f, 1.f);
+        }
+
+		Super::ApplySettings(bCheckForCommandLineOverrides);
+	}
+
 public:
 	UFUNCTION(BlueprintCallable)
 	void SetInitLaunch(bool InLaunch) { bInitLaunch = InLaunch; };
@@ -24,8 +42,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void SetSFXVolume(float InVolume) { SFXVolume = InVolume; };
-	
-	
+
+public:
 	UFUNCTION(BlueprintCallable)
 	bool GetInitLaunch() const { return bInitLaunch; };
 
@@ -35,40 +53,19 @@ public:
 	UFUNCTION(BlueprintCallable)
 	float GetSFXVolume() const { return SFXVolume; };
 
-	
-	UFUNCTION(BlueprintCallable)
-	void SetMasterSoundMix(USoundMix* InSoundMix) { MasterSoundMix = InSoundMix; }
-	
+public:	
 	UFUNCTION(BlueprintCallable)
 	void SetMusicSoundClass(USoundClass* InSoundClass) { MusicSoundClass = InSoundClass; }
 
 	UFUNCTION(BlueprintCallable)
 	void SetSFXSoundClass(USoundClass* InSoundClass) { SFXSoundClass = InSoundClass; }
 
-	
-	UFUNCTION(BlueprintCallable)
-	USoundMix* GetMasterSoundMix() const { return MasterSoundMix; }
-	
+public:
 	UFUNCTION(BlueprintCallable)
 	USoundClass* GetMusicSoundClass() const { return MusicSoundClass; }
 
 	UFUNCTION(BlueprintCallable)
 	USoundClass* GetSFXSoundClass() const { return SFXSoundClass; }
-
-	
-	UFUNCTION(BlueprintCallable)
-	static UBetterGameUserSettings* GetBetterGameUserSettings()
-	{
-		return Cast<UBetterGameUserSettings>(UGameUserSettings::GetGameUserSettings());
-	}
-
-	void ApplySettings(bool bCheckForCommandLineOverrides) override
-	{
-		Super::ApplySettings(bCheckForCommandLineOverrides);
-
-		UGameplayStatics::SetSoundMixClassOverride(this, MasterSoundMix, MusicSoundClass, MusicVolume, 1.0f, 0.0f);
-		UGameplayStatics::SetSoundMixClassOverride(this, MasterSoundMix, SFXSoundClass, SFXVolume, 1.0f, 0.0f);
-	}
 
 protected:
 	UPROPERTY(Config)
@@ -81,9 +78,6 @@ protected:
 	float SFXVolume = 1.0f;
 
 private:
-	UPROPERTY()
-	USoundMix* MasterSoundMix;
-
 	UPROPERTY()
 	USoundClass* MusicSoundClass;
 

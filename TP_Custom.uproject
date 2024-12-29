@@ -1,19 +1,20 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "",
+	"EngineAssociation": "4.27",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "Custom",
+			"Name": "TP_Custom",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-				"Engine"
+				"Engine",
+				"UMG"
 			]
 		}
 	],
 	"TargetPlatforms": [
-		"Windows"
+		"WindowsNoEditor"
 	]
 }
