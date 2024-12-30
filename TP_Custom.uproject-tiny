@@ -16,15 +16,6 @@
 	],
 	"Plugins": [
 		{
-			"Name": "OculusVR",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Win32",
-				"Win64",
-				"Android"
-			]
-		},
-		{
 			"Name": "OpenXRHandTracking",
 			"Enabled": false,
 			"SupportedTargetPlatforms": [
@@ -32,6 +23,15 @@
 				"Win64",
 				"Linux",
 				"HoloLens",
+				"Android"
+			]
+		},
+		{
+			"Name": "OculusVR",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Win32",
+				"Win64",
 				"Android"
 			]
 		},
@@ -67,43 +67,124 @@
 			]
 		},
 		{
-			"Name": "PerforceSourceControl",
+			"Name": "AudioCapture",
 			"Enabled": false
 		},
 		{
-			"Name": "PlasticSourceControl",
+			"Name": "Synthesis",
 			"Enabled": false
 		},
 		{
-			"Name": "SubversionSourceControl",
+			"Name": "MotoSynth",
 			"Enabled": false
 		},
 		{
-			"Name": "CLionSourceCodeAccess",
+			"Name": "SoundFields",
 			"Enabled": false
 		},
 		{
-			"Name": "CodeLiteSourceCodeAccess",
-			"Enabled": false
-		},
-		{
-			"Name": "KDevelopSourceCodeAccess",
-			"Enabled": false
-		},
-		{
-			"Name": "RiderSourceCodeAccess",
-			"Enabled": false
-		},
-		{
-			"Name": "VisualStudioCodeSourceCodeAccess",
-			"Enabled": false
-		},
-		{
-			"Name": "XCodeSourceCodeAccess",
+			"Name": "MagicLeapMedia",
 			"Enabled": false,
 			"SupportedTargetPlatforms": [
-				"Mac"
+				"Lumin"
 			]
+		},
+		{
+			"Name": "MagicLeap",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Lumin",
+				"Mac",
+				"Win64"
+			]
+		},
+		{
+			"Name": "MagicLeapPassableWorld",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Lumin",
+				"Mac",
+				"Win64"
+			]
+		},
+		{
+			"Name": "LocationServicesBPLibrary",
+			"Enabled": false
+		},
+		{
+			"Name": "OpenImageDenoise",
+			"Enabled": false
+		},
+		{
+			"Name": "ChaosEditor",
+			"Enabled": false
+		},
+		{
+			"Name": "AppleImageUtils",
+			"Enabled": false
+		},
+		{
+			"Name": "BackChannel",
+			"Enabled": false
+		},
+		{
+			"Name": "ArchVisCharacter",
+			"Enabled": false
+		},
+		{
+			"Name": "CharacterAI",
+			"Enabled": false
+		},
+		{
+			"Name": "AlembicImporter",
+			"Enabled": false
+		},
+		{
+			"Name": "DatasmithContent",
+			"Enabled": false
+		},
+		{
+			"Name": "GeometryCache",
+			"Enabled": false
+		},
+		{
+			"Name": "SpeedTreeImporter",
+			"Enabled": false
+		},
+		{
+			"Name": "LuminPlatformFeatures",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Lumin"
+			]
+		},
+		{
+			"Name": "MLSDK",
+			"Enabled": false
+		},
+		{
+			"Name": "AndroidMoviePlayer",
+			"Enabled": false
+		},
+		{
+			"Name": "AppleMoviePlayer",
+			"Enabled": false
+		},
+		{
+			"Name": "WebMMoviePlayer",
+			"Enabled": false
+		},
+		{
+			"Name": "WindowsMoviePlayer",
+			"Enabled": false
+		},
+		{
+			"Name": "GoogleCloudMessaging",
+			"Enabled": false
+		},
+		{
+			"Name": "MacGraphicsSwitching",
+			"Enabled": false
 		},
 		{
 			"Name": "ChunkDownloader",
@@ -137,139 +218,7 @@
 			"Enabled": false
 		},
 		{
-			"Name": "GoogleCloudMessaging",
-			"Enabled": false
-		},
-		{
-			"Name": "AndroidMoviePlayer",
-			"Enabled": false
-		},
-		{
-			"Name": "AppleMoviePlayer",
-			"Enabled": false
-		},
-		{
-			"Name": "WebMMoviePlayer",
-			"Enabled": false
-		},
-		{
-			"Name": "WindowsMoviePlayer",
-			"Enabled": false
-		},
-		{
-			"Name": "WmfMedia",
-			"Enabled": false
-		},
-		{
-			"Name": "MagicLeapMedia",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Lumin"
-			]
-		},
-		{
-			"Name": "AvfMedia",
-			"Enabled": false
-		},
-		{
-			"Name": "MediaCompositing",
-			"Enabled": false
-		},
-		{
-			"Name": "ImgMedia",
-			"Enabled": false
-		},
-		{
-			"Name": "AndroidMedia",
-			"Enabled": false
-		},
-		{
-			"Name": "MagicLeap",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Lumin",
-				"Mac",
-				"Win64"
-			]
-		},
-		{
-			"Name": "LuminPlatformFeatures",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Lumin"
-			]
-		},
-		{
-			"Name": "MLSDK",
-			"Enabled": false
-		},
-		{
-			"Name": "AlembicImporter",
-			"Enabled": false
-		},
-		{
-			"Name": "DatasmithContent",
-			"Enabled": false
-		},
-		{
-			"Name": "GeometryCache",
-			"Enabled": false
-		},
-		{
-			"Name": "SpeedTreeImporter",
-			"Enabled": false
-		},
-		{
-			"Name": "ArchVisCharacter",
-			"Enabled": false
-		},
-		{
-			"Name": "CharacterAI",
-			"Enabled": false
-		},
-		{
-			"Name": "OpenImageDenoise",
-			"Enabled": false
-		},
-		{
-			"Name": "MagicLeapPassableWorld",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Lumin",
-				"Mac",
-				"Win64"
-			]
-		},
-		{
-			"Name": "LauncherChunkInstaller",
-			"Enabled": false
-		},
-		{
-			"Name": "BackChannel",
-			"Enabled": false
-		},
-		{
-			"Name": "AppleImageUtils",
-			"Enabled": false
-		},
-		{
-			"Name": "ChaosEditor",
-			"Enabled": false
-		},
-		{
-			"Name": "RuntimePhysXCooking",
-			"Enabled": false
-		},
-		{
-			"Name": "PhysXVehicles",
-			"Enabled": false
-		},
-		{
 			"Name": "ChaosNiagara",
-			"Enabled": false
-		},
-		{
-			"Name": "ChaosSolverPlugin",
 			"Enabled": false
 		},
 		{
@@ -281,31 +230,78 @@
 			"Enabled": false
 		},
 		{
-			"Name": "AndroidPermission",
+			"Name": "ChaosSolverPlugin",
 			"Enabled": false
 		},
 		{
-			"Name": "GooglePAD",
+			"Name": "PhysXVehicles",
 			"Enabled": false
 		},
 		{
-			"Name": "XGEController",
+			"Name": "CLionSourceCodeAccess",
 			"Enabled": false
 		},
 		{
-			"Name": "MacGraphicsSwitching",
+			"Name": "CodeLiteSourceCodeAccess",
 			"Enabled": false
 		},
 		{
-			"Name": "PlatformCrypto",
+			"Name": "KDevelopSourceCodeAccess",
 			"Enabled": false
 		},
 		{
-			"Name": "MobileLauncherProfileWizard",
+			"Name": "NullSourceCodeAccess",
 			"Enabled": false
 		},
 		{
-			"Name": "MobilePatchingUtils",
+			"Name": "RiderSourceCodeAccess",
+			"Enabled": false
+		},
+		{
+			"Name": "VisualStudioCodeSourceCodeAccess",
+			"Enabled": false
+		},
+		{
+			"Name": "XCodeSourceCodeAccess",
+			"Enabled": false,
+			"SupportedTargetPlatforms": [
+				"Mac"
+			]
+		},
+		{
+			"Name": "GitSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "PerforceSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "PlasticSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "SubversionSourceControl",
+			"Enabled": false
+		},
+		{
+			"Name": "WmfMedia",
+			"Enabled": false
+		},
+		{
+			"Name": "MediaCompositing",
+			"Enabled": false
+		},
+		{
+			"Name": "ImgMedia",
+			"Enabled": false
+		},
+		{
+			"Name": "AvfMedia",
+			"Enabled": false
+		},
+		{
+			"Name": "AndroidMedia",
 			"Enabled": false
 		},
 		{
@@ -317,19 +313,11 @@
 			"Enabled": false
 		},
 		{
-			"Name": "CableComponent",
+			"Name": "UObjectPlugin",
 			"Enabled": false
 		},
 		{
-			"Name": "CustomMeshComponent",
-			"Enabled": false
-		},
-		{
-			"Name": "EditableMesh",
-			"Enabled": false
-		},
-		{
-			"Name": "LightPropagationVolume",
+			"Name": "LauncherChunkInstaller",
 			"Enabled": false
 		},
 		{
@@ -340,51 +328,12 @@
 			]
 		},
 		{
-			"Name": "ProceduralMeshComponent",
+			"Name": "LightPropagationVolume",
 			"Enabled": false
 		},
 		{
-			"Name": "CryptoKeys",
+			"Name": "MobilePatchingUtils",
 			"Enabled": false
-		},
-		{
-			"Name": "UObjectPlugin",
-			"Enabled": false
-		},
-		{
-			"Name": "GitSourceControl",
-			"Enabled": false
-		},
-		{
-			"Name": "PostSplashScreen",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"XboxOne"
-			]
-		},
-		{
-			"Name": "MotoSynth",
-			"Enabled": false
-		},
-		{
-			"Name": "Synthesis",
-			"Enabled": false
-		},
-		{
-			"Name": "SoundFields",
-			"Enabled": false
-		},
-		{
-			"Name": "AudioCapture",
-			"Enabled": false
-		},
-		{
-			"Name": "LocationServicesBPLibrary",
-			"Enabled": false
-		},
-		{
-			"Name": "Niagara",
-			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
