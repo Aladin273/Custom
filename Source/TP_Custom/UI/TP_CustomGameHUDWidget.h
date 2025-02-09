@@ -7,11 +7,11 @@
 #include "TP_CustomGameHUDWidget.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class TP_CUSTOM_API UTP_CustomGameHUDWidget : public UTP_CustomUserWidget
 {
-	GENERATED_BODY()
-	
+    GENERATED_BODY()
+
 };

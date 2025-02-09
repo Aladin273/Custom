@@ -9,12 +9,12 @@
 #include "TP_CustomGameHUD.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class TP_CUSTOM_API ATP_CustomGameHUD : public AHUD
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 public:
     static ATP_CustomGameHUD* ATP_CustomGameHUD::Get(APlayerController* PlayerController) { return PlayerController->GetHUD<ATP_CustomGameHUD>(); }

@@ -8,19 +8,19 @@
 #include "TP_CustomPlayerController.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class TP_CUSTOM_API ATP_CustomPlayerController : public APlayerController
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 protected:
-	virtual void BeginPlay() override;
-	
+    virtual void BeginPlay() override;
+
     virtual void EndPlay(const EEndPlayReason::Type EndPlayReason);
 
-	virtual void SetupInputComponent() override;
+    virtual void SetupInputComponent() override;
 
 protected:
     UFUNCTION()
@@ -28,5 +28,5 @@ protected:
 
 private:
     UFUNCTION()
-	void OnPauseGame();
+    void OnPauseGame();
 };

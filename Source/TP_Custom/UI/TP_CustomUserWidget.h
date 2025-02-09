@@ -7,11 +7,11 @@
 #include "TP_CustomUserWidget.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class TP_CUSTOM_API UTP_CustomUserWidget : public UUserWidget
 {
-	GENERATED_BODY()
-	
+    GENERATED_BODY()
+
 };

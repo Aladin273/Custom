@@ -9,12 +9,12 @@
 
 class UTP_CustomSettingsMenuWidget;
 /**
- * 
+ *
  */
 UCLASS()
 class TP_CUSTOM_API UTP_CustomMainMenuWidget : public UTP_CustomUserWidget
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 protected:
     virtual void NativeOnInitialized() override;

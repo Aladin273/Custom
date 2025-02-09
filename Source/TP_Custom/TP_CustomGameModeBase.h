@@ -9,10 +9,10 @@
 UENUM(BlueprintType)
 enum class ETP_CustomGameModeState : uint8
 {
-	WaitingForStart,
-	InProgress,
-	Pause,
-	GameOver
+    WaitingForStart,
+    InProgress,
+    Pause,
+    GameOver
 };
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnGameModeChangedSignature, ETP_CustomGameModeState, GameModeState);
@@ -20,7 +20,7 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnGameModeChangedSignature, ETP_Cus
 UCLASS()
 class TP_CUSTOM_API ATP_CustomGameModeBase : public AGameModeBase
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 public:
     virtual void StartPlay() override;
@@ -30,8 +30,8 @@ public:
     virtual bool ClearPause() override;
 
 public:
-	UPROPERTY(BlueprintAssignable)
-	FOnGameModeChangedSignature OnGameModeStateChanged;
+    UPROPERTY(BlueprintAssignable)
+    FOnGameModeChangedSignature OnGameModeStateChanged;
 
 protected:
     UPROPERTY(EditDefaultsOnly)

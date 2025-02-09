@@ -8,12 +8,12 @@
 #include "TP_CustomPauseMenuWidget.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class TP_CUSTOM_API UTP_CustomPauseMenuWidget : public UTP_CustomUserWidget
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 protected:
     virtual void NativeOnInitialized() override;

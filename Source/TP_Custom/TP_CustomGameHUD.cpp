@@ -41,7 +41,7 @@ void ATP_CustomGameHUD::RemoveAllWidgets()
 void ATP_CustomGameHUD::OnGameModeStateChanged(ETP_CustomGameModeState State)
 {
     RemoveAllWidgets();
-    
+
     if (GameStateWidgets.Contains(State))
     {
         AddToScreen(GameStateWidgets[State]);

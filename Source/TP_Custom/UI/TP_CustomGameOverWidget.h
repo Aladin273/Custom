@@ -8,12 +8,12 @@
 #include "TP_CustomGameOverWidget.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class TP_CUSTOM_API UTP_CustomGameOverWidget : public UTP_CustomUserWidget
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 protected:
     virtual void NativeOnInitialized() override;

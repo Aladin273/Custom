@@ -10,12 +10,12 @@
 #include "TP_CustomSettingsMenuWidget.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class TP_CUSTOM_API UTP_CustomSettingsMenuWidget : public UTP_CustomUserWidget
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
 protected:
     virtual void NativeOnInitialized() override;
